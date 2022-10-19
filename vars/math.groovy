@@ -18,7 +18,7 @@ def div(a,b)
 {
   echo "The div of ${a} and ${b} is  ${a/b}"
 }
-def git(a='sandeep') 
+def git(a) 
 { 
   echo "hello ${a} Kumar Patel" 
 }
