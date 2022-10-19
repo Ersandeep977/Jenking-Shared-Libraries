@@ -1,4 +1,4 @@
-def git() 
+def git(a='sandeep') 
 { 
-  echo "hello sandeep kumar patel" 
+  echo "hello ${a} Kumar Patel" 
 }
