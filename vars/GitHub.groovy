@@ -1,7 +1,4 @@
 def git() 
-{
-  script 
-      { 
-        git 'https://github.com/Ersandeep977/maven.git' 
-      }
+{ 
+  echo "hello sandeep kumar patel" 
 }
