@@ -10,5 +10,5 @@ def mvn()
 
 def scp()
 {
-  sh 'scp /root/sa.txt ubuntu@172.31.20.2:/home/ubuntu'
+  sh 'scp /var/lib/jenkins/sa.txt ubuntu@172.31.20.2:/home/ubuntu'
 }
