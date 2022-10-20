@@ -3,7 +3,7 @@ def newgit(repo)
   git "${repo}"
 }
 
-def newM()
+def mvn()
 {
   sh 'mvn package'
 }
