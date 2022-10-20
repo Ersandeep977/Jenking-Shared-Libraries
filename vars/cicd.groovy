@@ -15,5 +15,5 @@ def scp1()
 
 def scp()
 {
-  sh 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline3/webapp/target/webapp.war ubuntu@172.31.20.211:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp /home/ubuntu/./var/lib/jenkins/workspace/Shared-Lib-2/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
 }
