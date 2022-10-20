@@ -13,7 +13,7 @@ def scp1()
   sh 'scp /var/lib/jenkins/sa.txt ubuntu@172.31.20.2:/home/ubuntu'
 }
 
-def scp()
+def scp(a,b)
 {
-  sh 'scp /var/lib/jenkins/workspace/Shared-Lib-2/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp /var/lib/jenkins/workspace/${a}/webapp/target/webapp.war ubuntu@${b}:/var/lib/tomcat9/webapps/testapp.war'
 }
