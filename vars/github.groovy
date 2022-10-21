@@ -13,8 +13,8 @@ def mvn()
   sh 'mvn package'
 }
 
-def scp()
+def scp(WORKSPACE)
 {
-  sh 'scp /var/lib/jenkins/workspace/test-1/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
 }
 
