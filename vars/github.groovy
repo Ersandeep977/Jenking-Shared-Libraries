@@ -18,9 +18,9 @@ def scp(WORKSPACE)
   sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
 }
 
-def SelTesting(JobName)
+def SelTesting()
 {
-  sh 'java -jar /var/lib/jenkins/workspace/${JobName}/testing.jar'
+  sh 'java -jar /var/lib/jenkins/workspace/test-1/testing.jar'
 }
 
 
