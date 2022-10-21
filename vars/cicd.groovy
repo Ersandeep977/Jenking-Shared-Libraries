@@ -20,5 +20,5 @@ def scp(a,b)
 
 def sh()
 {
-  echo "hello"
+  echo "hello sandeep"
 }
