@@ -17,3 +17,8 @@ def scp(a,b)
 {
   sh 'scp /var/lib/jenkins/workspace/${a}/webapp/target/webapp.war ubuntu@${b}:/var/lib/tomcat9/webapps/testapp.war'
 }
+
+def sh()
+{
+  echo "hello"
+}
