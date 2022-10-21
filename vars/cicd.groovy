@@ -12,13 +12,11 @@ def scp1()
 {
   sh 'scp /var/lib/jenkins/sa.txt ubuntu@172.31.20.2:/home/ubuntu'
 }
+/*
+WORKSPACE=/var/lib/jenkins/workspace/Shared-Lib-3
+*/
 
-def scp(a,b)
+def scp(a)
 {
-  sh 'scp /var/lib/jenkins/workspace/${a}/webapp/target/webapp.war ubuntu@${b}:/var/lib/tomcat9/webapps/testapp.war'
-}
-
-def sh()
-{
-  echo "hello sandeep"
+  sh 'scp ${a}/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
 }
