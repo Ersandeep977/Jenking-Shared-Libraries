@@ -18,5 +18,5 @@ WORKSPACE=/var/lib/jenkins/workspace/Shared-Lib-3
 
 def scp(a)
 {
-  sh 'scp ${a}/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp ${a}/webapp/target/webapp.war ubuntu@172.31.20.2:/var/lib/tomcat9/webapps/webapp.war'
 }
