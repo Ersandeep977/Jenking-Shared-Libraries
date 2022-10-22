@@ -13,9 +13,9 @@ def MvnPack()
   sh 'mvn package'
 }
 
-def ScpData(WORKSPACE,ip)
+def ScpData(WORKSPACE,a)
 {
-  sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@${a}:/var/lib/tomcat9/webapps/testapp.war'
 }
 
 def SelTesting(WORKSPACE)
