@@ -26,7 +26,7 @@ def SelTesting(WORKSPACE)
 
 def ScpData1(WORKSPACE)
 { 
-  sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@/var/lib/tomcat9/webapps:/var/lib/tomcat9/webapps/testapp.war'
+  sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@172.31.25.117/var/lib/tomcat9/webapps:/var/lib/tomcat9/webapps/testapp.war'
 }
 
 
