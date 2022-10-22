@@ -8,7 +8,7 @@ def gitfunction()
  git 'https://github.com/Ersandeep977/DevOps-FunctionTesting-code.git'
 }
 
-def mvn()
+def MvnPack()
 {
   sh 'mvn package'
 }
