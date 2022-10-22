@@ -13,7 +13,7 @@ def MvnPack()
   sh 'mvn package'
 }
 
-def scp(WORKSPACE,ip)
+def ScpData(WORKSPACE,ip)
 {
   sh 'scp ${WORKSPACE}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/testapp.war'
 }
